@@ -7,14 +7,14 @@
   </head>
   <body class="bg-stone-950 text-indigo-50">
     <nav
-      class="bg-indigo-950 h-16 flex items-center justify-between shadow-md px-24 sticky top-0 z-10"
+      class="bg-indigo-950 h-16 flex items-center justify-between shadow-md sm:px-24 sticky top-0 z-10"
     >
       <h1
-        class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ff5d50] to-[#d31166]"
+        class="text-2xl mx-auto sm:mx-0 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ff5d50] to-[#d31166]"
       >
         <a href="#hero"> &lt; Marcel Bosch /&gt</a>
       </h1>
-      <ul class="flex w-1/2 justify-between font-bold">
+      <ul class="w-1/2 justify-between font-bold hidden sm:flex">
         <li>
           <a href="#about-me" class="hover:underline">Sobre mi</a>
         </li>
@@ -27,38 +27,42 @@
       </ul>
     </nav>
 
-    <section id="hero" class="flex items-center justify-between px-24 py-16">
-      <img
-        class="rounded-full w-60"
-        src="https://media.licdn.com/dms/image/v2/D4E03AQFYmEb2jiDvxA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728552961187?e=1740009600&v=beta&t=pZ-Wa48Unn1VP963ZGhPIV9LB23gYkA22NkXBzostlo"
-        alt=""
-      />
-      <article class="w-1/2 flex flex-col gap-10">
-        <h2
-          class="text-6xl text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ff5d50] to-[#d31166]"
-        >
-          ¡Hola!
-        </h2>
-        <p>Soy Marcel, desarrollador y profesor de programación.</p>
-        <ul class="flex justify-between w-1/3">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/marcel-bosch-developer/"
-              target="_blank"
-            >
-              <img src="./assets/linkedIn-logo.svg" alt="linkedIn-logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Marshall-Bits" target="_blank">
-              <img src="./assets/github-logo.svg" alt="github-logo" />
-            </a>
-          </li>
-        </ul>
-      </article>
+    <section id="hero">
+      <div
+        class="flex items-center justify-between flex-wrap max-w-72 sm:max-w-screen-lg mx-auto py-16 sm:px-10"
+      >
+        <img
+          class="rounded-full max-w-72 mx-auto"
+          src="https://media.licdn.com/dms/image/v2/D4E03AQFYmEb2jiDvxA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728552961187?e=1740009600&v=beta&t=pZ-Wa48Unn1VP963ZGhPIV9LB23gYkA22NkXBzostlo"
+          alt="profile image"
+        />
+        <article class="flex flex-col gap-10 mx-auto my-4">
+          <h2
+            class="text-6xl text-center sm:text-left font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ff5d50] to-[#d31166]"
+          >
+            ¡Hola!
+          </h2>
+          <p>Soy Marcel, desarrollador y profesor de programación.</p>
+          <ul class="flex gap-10">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/marcel-bosch-developer/"
+                target="_blank"
+              >
+                <img src="./assets/linkedIn-logo.svg" alt="linkedIn-logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Marshall-Bits" target="_blank">
+                <img src="./assets/github-logo.svg" alt="github-logo" />
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
     </section>
-    <section id="about-me" class="px-24 py-16 bg-indigo-950">
-      <article class="text-indigo-50 flex flex-col gap-10">
+    <section id="about-me" class="py-16 bg-indigo-950">
+      <article class="text-indigo-50 max-w-72 sm:max-w-screen-lg mx-auto flex flex-col gap-10">
         <h3 class="text-4xl font-bold">Sobre mi</h3>
         <p>
           <span class="font-bold">🎵 Creatividad y Tecnología:</span> Como
@@ -94,206 +98,210 @@
         </p>
       </article>
     </section>
-    <section id="projects" class="px-24 py-16">
-      <h3 class="text-4xl font-bold">Proyectos</h3>
-      <ul class="flex py-10 flex-wrap gap-10 justify-around text-indigo-950">
-        <li class="w-60 h-96 bg-indigo-50 overflow-hidden rounded-md">
-          <img
-            src="./assets/project-3.png"
-            alt="proyecto-3"
-            class="h-1/3 w-full object-cover shadow-md"
-          />
-          <article class="p-4 flex flex-col justify-between h-2/3">
-            <h4 class="font-bold text-lg mb-2">Dittopedia</h4>
-            <p>
-              Aplicación full-stack MEAN para compartir recursos para
-              developers. CRUD de recursos y usuarios.
-            </p>
-            <a
-              href="https://github.com/Marshall-Bits?tab=repositories&q=dittopedia&type=&language=&sort="
-              target="_blank"
-            >
-              <button
-                class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+    <section id="projects" class="py-16">
+      <div class="max-w-72 mx-auto sm:max-w-screen-lg">
+        <h3 class="text-4xl font-bold">Proyectos</h3>
+        <ul class="flex py-10 flex-wrap gap-10 justify-around text-indigo-950">
+          <li class="w-72 h-96 bg-indigo-50 overflow-hidden rounded-md">
+            <img
+              src="./assets/project-3.png"
+              alt="proyecto-3"
+              class="h-1/3 w-full object-cover shadow-md"
+            />
+            <article class="p-4 flex flex-col justify-between h-2/3">
+              <h4 class="font-bold text-lg mb-2">Dittopedia</h4>
+              <p>
+                Aplicación full-stack MEAN para compartir recursos para
+                developers. CRUD de recursos y usuarios.
+              </p>
+              <a
+                href="https://github.com/Marshall-Bits?tab=repositories&q=dittopedia&type=&language=&sort="
+                target="_blank"
               >
-                Visitar
-                <img
-                  class="w-5"
-                  src="./assets/github-logo.svg"
-                  alt="github-logo"
-                />
-              </button>
-            </a>
-          </article>
-        </li>
-        <li class="w-60 h-96 bg-indigo-50 overflow-hidden rounded-md">
-          <img
-            src="./assets/project-1.png"
-            alt="proyecto-1"
-            class="h-1/3 w-full object-cover shadow-md"
-          />
-          <article class="p-4 flex flex-col justify-between h-2/3">
-            <h4 class="font-bold text-lg mb-2">Unity 2D</h4>
-            <p>
-              Videotutoriales de desarrollo de videojuegos en Unity 2D. Aprende
-              a crear videojuegos desde cero con Unity y C#.
-            </p>
-            <a href="https://www.youtube.com/@marshallbits" target="_blank">
-              <button
-                class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+                <button
+                  class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+                >
+                  Visitar
+                  <img
+                    class="w-5"
+                    src="./assets/github-logo.svg"
+                    alt="github-logo"
+                  />
+                </button>
+              </a>
+            </article>
+          </li>
+          <li class="w-72 h-96 bg-indigo-50 overflow-hidden rounded-md">
+            <img
+              src="./assets/project-1.png"
+              alt="proyecto-1"
+              class="h-1/3 w-full object-cover shadow-md"
+            />
+            <article class="p-4 flex flex-col justify-between h-2/3">
+              <h4 class="font-bold text-lg mb-2">Unity 2D</h4>
+              <p>
+                Videotutoriales de desarrollo de videojuegos en Unity 2D.
+                Aprende a crear videojuegos desde cero con Unity y C#.
+              </p>
+              <a href="https://www.youtube.com/@marshallbits" target="_blank">
+                <button
+                  class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+                >
+                  Visitar
+                  <img
+                    class="w-5"
+                    src="./assets/github-logo.svg"
+                    alt="github-logo"
+                  />
+                </button>
+              </a>
+            </article>
+          </li>
+          <li class="w-72 h-96 bg-indigo-50 overflow-hidden rounded-md">
+            <img
+              src="./assets/project-2.png"
+              alt="proyecto-2"
+              class="h-1/3 w-full object-cover shadow-md"
+            />
+            <article class="p-4 flex flex-col justify-between h-2/3">
+              <h4 class="font-bold text-lg mb-2">Family events</h4>
+              <p>
+                Aplicación full-stack MERN para la gestión de eventos. <br />
+                CRUD de eventos y usuarios.
+              </p>
+              <a
+                href="https://github.com/Marshall-Bits?tab=repositories&q=family-events&type=&language=&sort="
+                target="_blank"
               >
-                Visitar
-                <img
-                  class="w-5"
-                  src="./assets/github-logo.svg"
-                  alt="github-logo"
-                />
-              </button>
-            </a>
-          </article>
-        </li>
-        <li class="w-60 h-96 bg-indigo-50 overflow-hidden rounded-md">
-          <img
-            src="./assets/project-2.png"
-            alt="proyecto-2"
-            class="h-1/3 w-full object-cover shadow-md"
-          />
-          <article class="p-4 flex flex-col justify-between h-2/3">
-            <h4 class="font-bold text-lg mb-2">Family events</h4>
-            <p>
-              Aplicación full-stack MERN para la gestión de eventos. <br />
-              CRUD de eventos y usuarios.
-            </p>
-            <a
-              href="https://github.com/Marshall-Bits?tab=repositories&q=family-events&type=&language=&sort="
-              target="_blank"
-            >
-              <button
-                class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+                <button
+                  class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+                >
+                  Visitar
+                  <img
+                    class="w-5"
+                    src="./assets/github-logo.svg"
+                    alt="github-logo"
+                  />
+                </button>
+              </a>
+            </article>
+          </li>
+          <li class="w-72 h-96 bg-indigo-50 overflow-hidden rounded-md">
+            <img
+              src="./assets/project-4.png"
+              alt="proyecto-4"
+              class="h-1/3 w-full object-cover shadow-md"
+            />
+            <article class="p-4 flex flex-col justify-between h-2/3">
+              <h4 class="font-bold text-lg mb-2">Sudo space traveler</h4>
+              <p>
+                Uno de mis proyectos de bootcamp. Juego de sudoku con temática
+                espacial.
+              </p>
+              <a
+                href="https://github.com/Marshall-Bits/sudoku--project"
+                target="_blank"
               >
-                Visitar
-                <img
-                  class="w-5"
-                  src="./assets/github-logo.svg"
-                  alt="github-logo"
-                />
-              </button>
-            </a>
-          </article>
-        </li>
-        <li class="w-60 h-96 bg-indigo-50 overflow-hidden rounded-md">
-          <img
-            src="./assets/project-4.png"
-            alt="proyecto-4"
-            class="h-1/3 w-full object-cover shadow-md"
-          />
-          <article class="p-4 flex flex-col justify-between h-2/3">
-            <h4 class="font-bold text-lg mb-2">Sudo space traveler</h4>
-            <p>
-              Uno de mis proyectos de bootcamp. Juego de sudoku con temática
-              espacial.
-            </p>
-            <a
-              href="https://github.com/Marshall-Bits/sudoku--project"
-              target="_blank"
-            >
-              <button
-                class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
-              >
-                Visitar
-                <img
-                  class="w-5"
-                  src="./assets/github-logo.svg"
-                  alt="github-logo"
-                />
-              </button>
-            </a>
-          </article>
-        </li>
-      </ul>
+                <button
+                  class="bg-pink-500 py-2 w-32 flex justify-center gap-4 align-middle text-indigo-50 rounded-md"
+                >
+                  Visitar
+                  <img
+                    class="w-5"
+                    src="./assets/github-logo.svg"
+                    alt="github-logo"
+                  />
+                </button>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section id="reviews" class="px-24 py-16 bg-indigo-950">
-      <h3 class="text-4xl font-bold">Reseñas</h3>
-      <article
-        class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex gap-4"
-      >
-        <img
-          class="rounded-full h-full"
-          src="https://media.licdn.com/dms/image/v2/D4D03AQH2Z0wR0EDCIw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726571917190?e=1740009600&v=beta&t=MhpbYlbsl6ps3l1ZXYvae3WDEDsDatByinUJawSRqEE"
-          alt="alvaro image"
-        />
-        <div>
-          <blockquote class="italic mb-4">
-            Gracias a la guía de Marcel, he adquirido no solo habilidades
-            técnicas, sino también la confianza para abordar proyectos
-            desafiantes y mantenerme al tanto de las últimas tendencias de la
-            industria.
-          </blockquote>
-          <p>Álvaro</p>
-        </div>
-      </article>
-      <article
-        class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex gap-4 align-middle"
-      >
-        <img
-          class="rounded-full h-full"
-          src="https://media.licdn.com/dms/image/v2/D4D35AQFDOaAxRNKGiA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1720615012147?e=1735243200&v=beta&t=CCSk7rrjEULVUEpydVHiwIM-hRCal6bXmVsK8J4mOVo"
-          alt="mikel image"
-        />
-        <div>
-          <blockquote class="italic mb-4">
-            Es uno de los mejores profesores que he tenido en mi vida (y he
-            tenido bastantes). Además, es una persona muy agradable y el
-            ambiente que creó en clase fue realmente bueno.
-          </blockquote>
-          <p>Mikel</p>
-        </div>
-      </article>
-      <article
-        class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex gap-4 align-middle"
-      >
-        <img
-          class="rounded-full h-full"
-          src="https://media.licdn.com/dms/image/v2/D4D35AQF0fd0jFLwnsA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1708516358670?e=1735243200&v=beta&t=FacBeslmmiX4KPqEAQOcWGrbaoUJVWvCbxEfGckSk9s"
-          alt="taha image"
-        />
-        <div>
-          <blockquote class="italic mb-4">
-            Marcel ha sido uno, si no el mejor profesor que he tenido el placer
-            de encontrar en mi vida. Puedo decir que probablemente no habría
-            superado muchos desafíos durante mi tiempo en Ironhack sin su
-            incansable apoyo hacia nosotros los estudiantes y su pasión por el
-            desarrollo web.
-          </blockquote>
-          <p>Taha</p>
-        </div>
-      </article>
-      <article
-        class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex gap-4 align-middle"
-      >
-        <img
-          class="rounded-full h-full"
-          src="https://media.licdn.com/dms/image/v2/C4D03AQGYWq0VwCVjeQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1641202929418?e=1740009600&v=beta&t=7iOOfZHlJClmjD61HWGBkqQ2gLVacs0urbC23asIdvQ"
-          alt="lorena image"
-        />
-        <div>
-          <blockquote class="italic mb-4">
-            Puedo dar fe de su ética de trabajo y profesionalismo. Es un líder
-            nato que se enorgullece de ayudar a otros a tener éxito y siempre
-            está dispuesto a echar una mano a colegas y estudiantes por igual.
-          </blockquote>
-          <p>Lorena</p>
-        </div>
-      </article>
-      <p class="mt-4">
-        *Estas reseñas han sido resumidas y traducidas al español, puedes encontrar más
-        en mi perfil de
-        <a
-          href="https://www.linkedin.com/in/marcel-bosch-developer/"
-          class="underline"
-          >LinkedIn</a
-        >.
-      </p>
+    <section id="reviews" class="py-16 bg-indigo-950">
+      <div class="max-w-72 mx-auto sm:max-w-screen-lg">
+        <h3 class="text-4xl font-bold">Reseñas</h3>
+        <article
+          class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
+        >
+          <img
+            class="rounded-full drop-shadow-lg  size-28 mx-auto sm:mx-0"
+            src="https://i.pravatar.cc/150?img=48"
+            alt="Nick image"
+          />
+          <div>
+            <blockquote class="italic mb-4">
+              Gracias a la guía de Marcel, he adquirido no solo habilidades
+              técnicas, sino también la confianza para abordar proyectos
+              desafiantes y mantenerme al tanto de las últimas tendencias de la
+              industria.
+            </blockquote>
+            <p>Nick</p>
+          </div>
+        </article>
+        <article
+          class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
+        >
+          <img
+            class="rounded-full drop-shadow-lg size-28 mx-auto sm:mx-0"
+            src="https://i.pravatar.cc/150?img=10"
+            alt="Antonia image"
+          />
+          <div>
+            <blockquote class="italic mb-4">
+              Es uno de los mejores profesores que he tenido en mi vida (y he
+              tenido bastantes). Además, es una persona muy agradable y el
+              ambiente que creó en clase fue realmente bueno.
+            </blockquote>
+            <p>Antonia</p>
+          </div>
+        </article>
+        <article
+          class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
+        >
+          <img
+            class="rounded-full drop-shadow-lg  size-28 mx-auto sm:mx-0"
+            src="https://i.pravatar.cc/150?img=33"
+            alt="John image"
+          />
+          <div>
+            <blockquote class="italic mb-4">
+              Marcel ha sido uno, si no el mejor profesor que he tenido el
+              placer de encontrar en mi vida. Puedo decir que probablemente no
+              habría superado muchos desafíos durante mi tiempo en Ironhack sin
+              su incansable apoyo hacia nosotros los estudiantes y su pasión por
+              el desarrollo web.
+            </blockquote>
+            <p>John</p>
+          </div>
+        </article>
+        <article
+          class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
+        >
+          <img
+            class="rounded-full drop-shadow-lg  size-28 mx-auto sm:mx-0"
+            src="https://i.pravatar.cc/150?img=9"
+            alt="Almira image"
+          />
+          <div>
+            <blockquote class="italic mb-4">
+              Puedo dar fe de su ética de trabajo y profesionalismo. Es un líder
+              nato que se enorgullece de ayudar a otros a tener éxito y siempre
+              está dispuesto a echar una mano a colegas y estudiantes por igual.
+            </blockquote>
+            <p>Almira</p>
+          </div>
+        </article>
+        <p class="mt-4">
+          *Estas reseñas han sido resumidas y traducidas al español, puedes
+          encontrar más en mi perfil de
+          <a
+            href="https://www.linkedin.com/in/marcel-bosch-developer/"
+            class="underline"
+            >LinkedIn</a
+          >.
+        </p>
+      </div>
     </section>
   </body>
 </html>
