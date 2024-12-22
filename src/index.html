@@ -6,26 +6,28 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-stone-950 text-indigo-50">
-    <nav
-      class="bg-indigo-950 h-16 flex items-center justify-between shadow-md sm:px-24 sticky top-0 z-10"
-    >
-      <h1
-        class="text-2xl mx-auto sm:mx-0 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ff5d50] to-[#d31166]"
+    <section id="header " class="bg-indigo-950 shadow-md sticky top-0 z-10">
+      <nav
+        class="h-16 flex items-center justify-between sm:px-24 max-w-screen-lg mx-auto"
       >
-        <a href="#hero"> &lt; Marcel Bosch /&gt</a>
-      </h1>
-      <ul class="w-1/2 justify-between font-bold hidden sm:flex">
-        <li>
-          <a href="#about-me" class="hover:underline">Sobre mi</a>
-        </li>
-        <li>
-          <a href="#projects" class="hover:underline">Proyectos</a>
-        </li>
-        <li>
-          <a href="#reviews" class="hover:underline">Reviews</a>
-        </li>
-      </ul>
-    </nav>
+        <h1
+          class="text-2xl mx-auto sm:mx-0 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ff5d50] to-[#d31166]"
+        >
+          <a href="#hero"> &lt; Marcel Bosch /&gt</a>
+        </h1>
+        <ul class="w-1/2 justify-between font-bold hidden sm:flex">
+          <li>
+            <a href="#about-me" class="hover:underline">Sobre mi</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:underline">Proyectos</a>
+          </li>
+          <li>
+            <a href="#reviews" class="hover:underline">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
     <section id="hero">
       <div
@@ -61,8 +63,10 @@
         </article>
       </div>
     </section>
-    <section id="about-me" class="py-16 bg-indigo-950">
-      <article class="text-indigo-50 max-w-72 sm:max-w-screen-lg mx-auto flex flex-col gap-10">
+    <section id="about-me" class="py-16 bg-indigo-950 sm:px-24">
+      <article
+        class="text-indigo-50 max-w-72 sm:max-w-screen-lg mx-auto flex flex-col gap-10"
+      >
         <h3 class="text-4xl font-bold">Sobre mi</h3>
         <p>
           <span class="font-bold">🎵 Creatividad y Tecnología:</span> Como
@@ -98,7 +102,7 @@
         </p>
       </article>
     </section>
-    <section id="projects" class="py-16">
+    <section id="projects" class="py-16 sm:px-24">
       <div class="max-w-72 mx-auto sm:max-w-screen-lg">
         <h3 class="text-4xl font-bold">Proyectos</h3>
         <ul class="flex py-10 flex-wrap gap-10 justify-around text-indigo-950">
@@ -218,14 +222,14 @@
         </ul>
       </div>
     </section>
-    <section id="reviews" class="py-16 bg-indigo-950">
+    <section id="reviews" class="py-16 bg-indigo-950 sm:px-24">
       <div class="max-w-72 mx-auto sm:max-w-screen-lg">
         <h3 class="text-4xl font-bold">Reseñas</h3>
         <article
           class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
         >
           <img
-            class="rounded-full drop-shadow-lg  size-28 mx-auto sm:mx-0"
+            class="rounded-full drop-shadow-lg size-28 mx-auto sm:mx-0"
             src="https://i.pravatar.cc/150?img=48"
             alt="Nick image"
           />
@@ -260,7 +264,7 @@
           class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
         >
           <img
-            class="rounded-full drop-shadow-lg  size-28 mx-auto sm:mx-0"
+            class="rounded-full drop-shadow-lg size-28 mx-auto sm:mx-0"
             src="https://i.pravatar.cc/150?img=33"
             alt="John image"
           />
@@ -279,7 +283,7 @@
           class="bg-indigo-50 mt-10 rounded-md p-4 text-indigo-950 flex flex-col sm:flex-row gap-4"
         >
           <img
-            class="rounded-full drop-shadow-lg  size-28 mx-auto sm:mx-0"
+            class="rounded-full drop-shadow-lg size-28 mx-auto sm:mx-0"
             src="https://i.pravatar.cc/150?img=9"
             alt="Almira image"
           />
