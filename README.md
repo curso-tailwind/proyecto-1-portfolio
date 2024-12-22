@@ -1,4 +1,14 @@
 # Proyecto 1: Portfolio personal
+## Índice de Contenidos
+1. [Descripción](#1-descripción)
+2. [Estructura](#2-estructura)
+   - [Header](#header)
+   - [Hero](#hero)
+   - [Sobre mí](#sobre-mí)
+   - [Proyectos](#proyectos)
+   - [Reviews](#reviews)
+3. [Ordenar clases automáticamente](#3-ordenar-clases-automáticamente)
+   - [Cómo instalar el plugin](#cómo-instalar-el-plugin)
 ## 1. Descripción
 En este proyecto tenemos un portfolio personal que contendrá información sobre ti, tus habilidades, proyectos y datos de contacto.
 Este proyecto será la carta de presentación para futuros empleadores o clientes.
