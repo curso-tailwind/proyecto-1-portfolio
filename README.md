@@ -67,5 +67,3 @@ Ahora crea un archivo en la raíz de tu proyecto llamado `.prettierrc` y añade 
 }
 ```
 A partir de ahora, cuando quieras que tus clases se ordenen, solo tienes que formatear el archivo. Botón derecho en el archivo > Format Document (o el comando que te sugiera tu sistema).
-
-
