@@ -1,7 +1,6 @@
 const menuButton = document.querySelector("#menu-button");
 const navMenu = document.querySelector("#nav-menu");
 const menuListItems = document.querySelectorAll("#nav-menu li");
-const mainTitle = document.querySelector("#main-title");
 
 menuButton.addEventListener("click", () => {
   navMenu.classList.remove("animate-slide-out");
@@ -12,6 +11,8 @@ menuButton.addEventListener("click", () => {
 
 menuListItems.forEach((item) => {
   item.addEventListener("click", () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth > 640) return;
     navMenu.classList.remove("animate-slide-in");
     navMenu.classList.add("animate-slide-out");
 
@@ -22,10 +23,10 @@ menuListItems.forEach((item) => {
   });
 });
 
-mainTitle.addEventListener("click", () => {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+window.addEventListener("resize", () => {
+  const windowWidth = window.innerWidth;
+  if (windowWidth > 640) {
+    navMenu.classList.remove("animate-slide-in");
+    navMenu.classList.remove("animate-slide-out");
+  }
 });

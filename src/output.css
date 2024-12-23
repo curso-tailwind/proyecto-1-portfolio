@@ -629,10 +629,6 @@ video {
   height: 24rem;
 }
 
-.h-svh {
-  height: 100svh;
-}
-
 .h-dvh {
   height: 100dvh;
 }
@@ -645,16 +641,12 @@ video {
   width: 18rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-svw {
-  width: 100svw;
-}
-
 .w-dvw {
   width: 100dvw;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-72 {
@@ -695,6 +687,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .flex-col {
